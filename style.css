@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --clr-violet: hsl(257, 40%, 49%);
+    --clr-magenta: hsl(300, 69%, 71%);
+
+
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-color: rgb(148, 22, 197);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+}
+
+.first-img{
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    width: 200px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 10rem;
+}
+
+.right-side h1{
+    color: white;
+    font-family: var(--ff-primary);
+    font-size: 40px;
+    width: 450px;
+    margin-bottom: 2rem;
+}
+
+.right-side p{
+    color: white;
+    font-family: var(--ff-primary);
+    font-size: 19px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.button{
+    text-decoration: none;
+    font-family: var(--ff-secondary);
+    font-size: 19px;
+    color: var(--clr-violet);
+    background-color: white;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 35%;
+    text-align: center;
+    margin-top: 1rem;
+    box-shadow: 3px 5px 10px rgb(87, 86, 86);
+}
+
+.button:hover{
+    color: white;
+    background-color: var(--clr-magenta);
+}
+
+.social{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin-top: 7rem;
+}
+
+.social i{
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 0.8rem 1rem;
+    border-width: 2px;
+}
+
+.social i:hover{
+    color: var(--clr-magenta);
+    cursor: pointer;
+    border-color: var(--clr-magenta);
+}
+
+.fa-brands{
+    font-size: 20px;
+}
+
+@media (max-width:1000px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .left-side img{
+        width: 100%;
+    }
+}
